@@ -1,205 +1,306 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>动画效果</title>
-
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            height: 100vh;
-            width: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .login {
-            width: 300px;
-            height: 400px;
-            background-color: pink;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 20px;
-            z-index: 1;
-
-        }
-
-        .login.animate {
-            transform: rotate(5deg);
-            animation-name: left;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-fill-mode: forwards;
-
-        }
-
-        .regist {
-
-            position: absolute;
-            margin-left: 60px;
-            width: 300px;
-            height: 400px;
-            background-color: rgb(179, 205, 235);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 20px;
-            transform: rotate(-5deg);
-            z-index: 0;
-
-        }
-
-        .regist.animate {
-            animation-name: right;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-fill-mode: forwards;
-            /* animation-direction: reverse; */
-        }
-
-        input {
-            outline: none;
-            margin-bottom: 20px;
-            border: 1px solid rgb(81, 226, 236);
-            border-radius: 10px;
-            height: 30px;
-            width: 200px;
-            text-indent: 1em;
-        }
-
-        button {
-            outline: none;
-            width: 60px;
-            height: 30px;
-            background: rgb(81, 226, 236);
-            border: 0;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        button:hover {
-            background: rgb(192, 248, 154);
-
-        }
-
-        button:active {
-            background: rgb(238, 160, 114);
-
-        }
-
-        @keyframes left {
-            0% {
-                z-index: 0;
-            }
-
-            50% {
-                transform: rotate(0deg) translateX(-180px);
-            }
-
-            100% {
-                transform: translateX(0px);
-                z-index: 1;
-
-            }
-        }
-
-        @keyframes right {
-            0% {
-                transform: rotate(-5deg);
-                z-index: 0;
-            }
-
-            50% {
-                transform: rotate(0deg) translateX(180px);
-            }
-
-            100% {
-                transform: translateX(0px);
-                z-index: 1;
-
-            }
-        }
-    </style>
-
-
+<html>“啊!DOCTYPE HTML>
+“啊!- [if IE 6]>
+<html id="ie6" class="ie6 lt-ie9">
+“啊![endif] - >
+“啊!- [if IE 7]>
+<html id="ie7" class="ie7 lt-ie9">
+“啊![endif] - >
+“啊!- [if IE 8]>
+<html id="ie8" class="ie8 lt-ie9">
+“啊![endif] - >
+“啊!- [if gte IE 9]>
+<html class="ie9">
+“啊![endif] - >
+“啊!(如果!」]<!的>
+<html>
+“啊!的<![endif] - >
+<饰 Head>
+        <元http-equiv=“布拉格” content=“非隐藏” />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="DSX,工科男表白,浪漫表白,表白网站">
+        <meta name="description" content="这是XXX为XXX表白制作的表白网站">
+        <title>XXX LOVE XXX</title>
+        <link rel="stylesheet" href="all.min.css" >
 </head>
-
 <body>
-    <div class="login">
-        <input type="text" class="username" placeholder="用户名">
-        <input type="text" class="password" placeholder="密码">
-        <button class="btn">登录</button>
-        <button id="registLink">去注册</button>
+        <div class="flowtime">
+                <div class="ft-section section-1" data-id=“第1节“>
+                        <div id="/section-1/page-1" class=“金融时报第1页“ data-id="page-1">
+                                <p class="text1"><span id=“正文-75“ contenteditable="true">XX</span> ❤ <span id="text-76" contenteditable="true">XX</span> <span id="text-77" contenteditable="true">一生一世</span></p>
+                                <p class="text2">按键盘 "↓" <span id="text-78" contenteditable="true">开始倾听工科男的浪漫表白</span></p>
+                        </div>
+                        <div id="/section-1/page-2" class="ft-page page-2" data-id="page-2">
+                                <p class="top-text" id="text-1" contenteditable="true">过去的XX一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
+                                <img src="img/iali63.jpg" tppabs="img/iali63.jpg"  alt="过去的XX一直是一个人生活，享受着孤独，也憧憬着爱情。" />
+                        </div>
+                        <div id="/section-1/page-3" class="ft-page page-3 left-img" data-id="page-3">
+                                <h2 class="text" id="text-2" contenteditable="true">一个人的长廊</h2>
+                                <img src="img/iali35.jpg" tppabs="img/iali35.jpg"  alt="一个人的长廊"/>
+                        </div>
+                        <div id="/section-1/page-4" class="ft-page page-4 full-img" data-id="page-4">
+                                <h2 class="center-text" id="text-3" contenteditable="true">一个人的山岗</h2>
+                                <img src="img/iali6.jpg" tppabs="img/iali6.jpg"  alt="一个人的山岗" />
+                        </div>
+                </div>
+                <div class="ft-section section-2" data-id="section-2">
+                        <div id="/section-2/page-1" class="ft-page page-5 full-img" data-id="page-1">
+                                <h2 class="center-text" id="text-4" contenteditable="true">一个人的地铁</h2>
+                                <img src="img/iali19.jpg" tppabs="img/iali19.jpg"  alt="一个人的地铁" />
+                        </div>
+                        <div id="/section-2/page-2" class="ft-page page-6" data-id="page-2">
+                                <h2 class="center-text" id="text-5" contenteditable="true">一个人的游乐场</h2>
+                                <img src="img/iali29.jpg" tppabs="img/iali29.jpg" alt="一个人的游乐场"/>
+                        </div>
+                        <div id="/section-2/page-3" class="ft-page page-7" data-id="page-3">
+                                <h3 id="text-6" contenteditable="true">但他依然乐观，微笑着，等待着</h3>
+                                <img src="img/iali60.jpg" tppabs="img/iali60.jpg"  alt="但他依然乐观，微笑着，等待着"/>
+                        </div>
+                        <div id="/section-2/page-4" class="ft-page page-8 full-img" data-id="page-4">
+                                <h3 id="text-7" contenteditable="true">生活难免有风风雨雨</h3>
+                                <img src="img/iali51.jpg" tppabs="img/iali51.jpg" alt="生活难免有风风雨雨" />
+                        </div>
+                        <div id="/section-2/page-5" class="ft-page page-9" data-id="page-5">
+                                <h3 id="text-8" contenteditable="true">他总是能够轻松的应对</h3>
+                                <img src="img/iali5.jpg" tppabs="img/iali5.jpg" />
+                        </div>
+                        <div id="/section-2/page-6" class="ft-page page-10" data-id="page-6">
+                                <h3 id="text-9" contenteditable="true">并且面带阳光、自信的笑容</h3>
+                                <img src="img/iali22.jpg" tppabs="img/iali22.jpg" />
+                        </div>
+                </div>
+                <div class="ft-section section-3" data-id="section-3">
+                        <div id="/section-3/page-1" class="ft-page page-11 full-img" data-id="page-1">
+                                <h3 id="text-10" contenteditable="true">生活也不会总是一帆风顺</h3>
+                                <img src="img/iali24.jpg" tppabs="img/iali24.jpg"  />
+                        </div>
+                        <div id="/section-3/page-2" class="ft-page page-12" data-id="page-2">
+                                <h3><span id="text-11" contenteditable="true">但他每次都能勇敢的面对</span><br /><span id="text-12" contenteditable="true">随时准备接受生活的挑战</span></h3>
+                                <img src="img/iali25.jpg" tppabs="img/iali25.jpg" />
+                        </div>
+                        <div id="/section-3/page-3" class="ft-page page-13" data-id="page-3">
+                                <img src="img/iali64.jpg" tppabs="img/iali64.jpg" alt='可是小明的爱情又在哪里呢？' />
+                                <h3 id="text-13" contenteditable="true">可是XX的爱情又在哪里呢？</h3>
+                        </div>
+                        <div id="/section-3/page-4" class="ft-page page-14 left-img" data-id="page-4">
+                                <h3 id="text-14" contenteditable="true">在镜子里面吗？他不敢相信</h3>
+                                <img src="img/iali46.jpg" tppabs="img/iali46.jpg" />
+                        </div>
+                        <div id="/section-3/page-5" class="ft-page page-15 left-img" data-id="page-5">
+                                <h3><span id="text-15" contenteditable="true">他去问大树，我的爱情在哪里？</span><br /><span id="text-16" contenteditable="true">大树告诉他，也许就在不远的地方</span></h3>
+                                <img src="img/iali45.jpg" tppabs="img/iali45.jpg" />
+                        </div>
+                        <div id="/section-3/page-6" class="ft-page page-16 left-img" data-id="page-6">
+                                <h3><span id="text-17" contenteditable="true">于是，XX一个人继续向前走</span><br /><span id="text-18" contenteditable="true">走在茫茫的雪地上</span></h3>
+                                <img src="img/iali66.jpg" tppabs="img/iali66.jpg" />
+                        </div>
+                        <div id="/section-3/page-7" class="ft-page page-17 top-text" data-id="page-7">
+                                <h3 id="text-19" contenteditable="true">直到有一天XX与XX相遇了</h3>
+                                <img src="img/iali16.jpg" tppabs="img/iali16.jpg" />
+                        </div>
+                </div>
+                <div class="ft-section section-4" data-id="section-4">
+                        <div id="/section-4/page-1" class="ft-page page-18 full-img" data-id="page-1">
+                                <p class="text" id="text-20" contenteditable="true">XX喜欢XX，非常非常的喜欢，因为XX的出现，XX脸上有了更加灿烂的笑容</p>
+                                <img src="img/iali11.jpg" tppabs="img/iali11.jpg"  />
+                        </div>
+                        <div id="/section-4/page-2" class="ft-page page-19" data-id="page-2">
+                                <h3 id="text-21" contenteditable="true">可是XX会喜欢XX吗？</h3>
+                                <img src="img/iali75.jpg" tppabs="img/iali75.jpg" />
+                        </div>
+                        <div id="/section-4/page-3" class="ft-page page-20" data-id="page-3">
+                                <img src="img/iali59.png" tppabs="img/iali59.png" />
+                                <h3 id="text-22" contenteditable="true">XX想。。。</h3>
+                                <img src="img/iali9.jpg" tppabs="img/iali9.jpg" />
+                        </div>
+                        <div id="/section-4/page-4" class="ft-page page-21" data-id="page-4">
+                                <h3 id="text-23" contenteditable="true">XX想和XX在一起</h3>
+                                <img src="img/iali59.png" tppabs="img/iali59.png" />
+                        </div>
+                        <div id="/section-4/page-5" class="ft-page page-22 left-img" data-id="page-5">
+                                <h3 id="text-24" contenteditable="true">然后XX会经常去找XX</h3>
+                                <img src="img/iali4.jpg" tppabs="img/iali4.jpg" />
+                        </div>
+                        <差异身份证明（identification）=“/第4节/第6页“ 班级=“ft-page第23页左侧-img“ 数据标识=“第6页“>
+                                <h3身份证明（identification）=“文本-25“ 内容可编辑=“真实”>然后两个人一起出去玩</h3>
+                                <img科学研究委员会=“img/ial 44 . jpg“ tppabs=“img/ial 44 . jpg“ />
+                        </差异>
+                        <差异身份证明（identification）=“/第4节/第7页“ 班级=“金融时报-第24页-完整版-img“ 数据标识=“第7页“>        
+                                <h3 id="text-26" contenteditable="true">晚上XX会把XX送回家</h3>
+                                <img src="img/iali32.jpg" tppabs="img/iali32.jpg" />
+                        </div>
+                </div>
+                <div class="ft-section section-5" data-id="section-5">
+                        <div id="/section-5/page-1" class="ft-page page-25 left-img" data-id="page-1">
+                                <h3><span id="text-27" contenteditable="true">直到很晚</span><br /><span id="text-28" contenteditable="true">XX再一个人回家</span></h3>
+                                <img src="img/iali37.jpg" tppabs="img/iali37.jpg" />
+                        </div>
+                        <div id="/section-5/page-2" class="ft-page page-26 top-text" data-id="page-2">
+                                <h3 id="text-29" contenteditable="true">然后高兴地进入梦乡，在梦中还会和XX在一起</h3>
+                                <img src="img/iali10.gif" tppabs="img/iali10.gif" />
+                        </div>
+                        <div id="/section-5/page-3" class="ft-page page-27" data-id="page-3">
+                                <h3 id="text-30" contenteditable="true">XX想成为了XX的逛街助手</h3>
+                                <img src="img/iali67.jpg" tppabs="img/iali67.jpg"  />
+                        </div>
+                        <div id="/section-5/page-4" class="ft-page page-28" data-id="page-4">
+                                <h3 id="text-31" contenteditable="true">然后，XX和XX一起去很多地方玩</h3>
+                                <img src="img/iali40.jpg" tppabs="img/iali40.jpg" />
+                        </div>
+                        <div id="/section-5/page-5" class="ft-page page-29" data-id="page-5">
+                                <h3 id="text-32" contenteditable="true">XX也想和XX一块成为一对吃货</h3>
+                                <img src="img/iali12.jpg" tppabs="img/iali12.jpg" />
+                        </div>
+                        <div id="/section-5/page-6" class="ft-page page-30" data-id="page-6">
+                                <h3 id="text-33" contenteditable="true">再然后，他们会搬到了一起</h3>
+                                <img src="img/iali76.gif" tppabs="img/iali76.gif" />
+                        </div>
+                        <div id="/section-5/page-7" class="ft-page page-31" data-id="page-7">
+                                <h3 id="text-34" contenteditable="true">再然后，XX会开始学习她的技能</h3>
+                                <img src="img/iali77.jpg" tppabs="img/iali77.jpg" />
+                        </div>
+                </div>
+                <div class="ft-section section-6" data-id="section-6">
+                        <div id="/section-6/page-1" class="ft-page page-32" data-id="page-1">
+                                <h3 id="text-35" contenteditable="true">煮饭</h3>
+                                <img src="img/iali62.jpg" tppabs="img/iali62.jpg"  />
+                        </div>
+                        <div id="/section-6/page-2" class="ft-page page-33 top-text" data-id="page-2">
+                                <h3 id="text-36" contenteditable="true">那时候，每天早上，他们吃着自己做的美食</h3>
+                                <img src="img/iali3.jpg" tppabs="img/iali3.jpg" />
+                        </div>
+                        <div id="/section-6/page-3" class="ft-page page-34 left-img" data-id="page-3">
+                                <h3 id="text-37" contenteditable="true">然后在同一个站台，高高兴兴的一起上班</h3>
+                        </div>
+                        <div id="/section-6/page-4" class="ft-page page-35" data-id="page-4">
+                                <h3><span id="text-38" contenteditable="true">XX会感觉自己好幸福。</span><br /><span id="text-39" contenteditable="true">因为自己有了家</span><br /><span id="text-40" contenteditable="true">那个有XX在的地方</span></h3>
+                                <img src="img/iali8.gif" tppabs="img/iali8.gif" />
+                        </div>
+                        <div id="/section-6/page-5" class="ft-page page-36 full-img" data-id="page-5">
+                                <h3 id="text-41" contenteditable="true">他们可能偶尔也会吵架</h3>
+                                <img src="img/iali31.jpg" tppabs="img/iali31.jpg" />
+                        </div>
+                        <div id="/section-6/page-6" class="ft-page page-37 left-img" data-id="page-6">
+                                <h3 id="text-42" contenteditable="true">XX不想这样</h3>
+                                <img src="img/iali49.jpg" tppabs="img/iali49.jpg" />
+                        </div>
+                        <div id="/section-6/page-7" class="ft-page page-38 bottom-text" data-id="page-7">
+                                <img src="img/iali21.jpg" tppabs="img/iali21.jpg" />
+                                <h3 id="text-43" contenteditable="true">一定是我有什么做的不对，XX会这么想</h3>
+                        </div>
+                </div>
+                <div class="ft-section section-7" data-id="section-7">
+                        <div id="/section-7/page-1" class="ft-page page-39 left-img" data-id="page-1">
+                                <h3 id="text-44" contenteditable="true">如果没有XX在身边，窗外就没有风景</h3>
+                                <img src="img/iali2.jpg" tppabs="img/iali2.jpg" />
+                        </div>
+                        <div id="/section-7/page-2" class="ft-page page-40" data-id="page-2">
+                                <h3 id="text-45" contenteditable="true">如果没有XX在身后</h3>
+                                <img src="img/iali14.jpg" tppabs="img/iali14.jpg"  />
+                        </div>
+                        <div id="/section-7/page-3" class="ft-page page-41" data-id="page-3">
+                                <img科学研究委员会=“img/ial 30 _ 1 . jpg“ tppabs=“img/ial 30 _ 1 . jpg“ 班级=img1/>
+                                <img科学研究委员会=“img/ial 30 _ 2 . jpg“ tppabs=“img/ial 30 _ 2 . jpg“ 班级=img 2’/>
+                                <h3身份证明（identification）=“正文-46“ 内容可编辑=“真实”>xx又怎会飞的更高更远</h3>
+                        </差异>
+                        <差异身份证明（identification）=“/第7节/第4页“ 班级=“金融时报第42页“ 数据标识=“第4页“>
+                                <h3><跨度身份证明（identification）=“正文-47“ 内容可编辑=“真实”>xx不想这样。他要为xx改变自己</跨度><英国铁路公司/><跨度身份证明（identification）=“正文-48“ 内容可编辑=“真实”>xx不知道xx喜欢什么,但他一定会满足她的一切。</跨度></h3>
+                                <img科学研究委员会=“img/ial 69 . jpg“ tppabs=“img/ial 69 . jpg“  />
+                        </div>
+                        <div id="/section-7/page-5" class="ft-page page-43" data-id="page-5">
+                                <img src="img/iali42.jpg" tppabs="img/iali42.jpg" />
+                                <h3 id="text-49" contenteditable="true">我愿意一直陪伴着你</h3>
+                        </div>
+                        <div id="/section-7/page-6" class="ft-page page-44 left-img" data-id="page-6">
+                                <h3><span id="text-50" contenteditable="true">爱情就像花草一样</span><br /><span id="text-51" contenteditable="true">需要用包容来浇灌</span></h3>
+                                <img src="img/iali0.jpg" tppabs="img/iali0.jpg" />
+                        </div>
+                        <div id="/section-7/page-7" class="ft-page page-45 left-img" data-id="page-7">
+                                <h3><span id="text-52" contenteditable="true">直到一天，XX不想让自己后悔</span><br /><span id="text-53" contenteditable="true">XX开始准备一份惊喜</span></h3>
+                                <img src="img/iali18.jpg" tppabs="img/iali18.jpg" />
+                        </div>
+                </div>
+                <div class="ft-section section-8" data-id="section-8">
+                        <div id="/section-8/page-1" class="ft-page page-46" data-id="page-1">
+                                <img src="img/iali57.gif" tppabs="img/iali57.gif" />
+                                <h3>
+                                        <span </跨度>
+                                        <跨度身份证明（identification）=“正文-55“ 内容可编辑=“真实”>xx好开心</跨度>
+                                        <跨度身份证明（identification）=“正文-56“ 内容可编辑=“真实”>因为他想象着xx看到时</跨度>
+                                        <跨度身份证明（identification）=“正文-57“ 内容可编辑=“真实”>开心的样子</跨度>
+                                </h3>
+                        </差异>
+                        <差异身份证明（identification）=“/第8节/第2页“ 班级=“金融时报第47页顶部文字“ 数据标识=“第二页“>
+                                <img科学研究委员会=“img/ial 58 . jpg“ tppabs=“img/ial 58 . jpg“ />
+                                <h3>
+                                        <跨度身份证明（identification）=“正文-58“ 内容可编辑=“真实”>想想未来他们或许</跨度>
+                    <跨度身份证明（identification）=“正文-59“ 内容可编辑=“真实”>会有一辈子</跨度>
+                                        <跨度身份证明（identification）=“正文-59“ 内容可编辑=“真实”>xx好开心</跨度>
+                                        <跨度身份证明（identification）=“文本-60“ 内容可编辑=“真实”>或许他可以和xx一起</跨度>
+                                        <跨度身份证明（identification）=“正文-61“ 内容可编辑=“真实”>去全世界好多地方玩</跨度></h3>
+
+                        </差异>
+                        <差异身份证明（identification）=“/第8节/第3页“ 班级=“ft-page第48页左侧-img“ 数据标识=“第3页“>
+                                <p><跨度身份证明（identification）=“文本-62“ 内容可编辑=“真实”>xx也会继续努力</跨度><英国铁路公司/><跨度身份证明（identification）=“正文-63“ 内容可编辑=“真实”>为了他和xx的梦之城堡</跨度></p>
+                                <img科学研究委员会=“img/ial 65。jpg“TPP ABS =“img/ial 65。jpg" />
+                        </差异>
+                        <差异身份证明（标识）=“/第8节/第四页"班级="金融时报-第49页-完整版-img“数据标识="第四页">
+                        <IMG科学研究委员会=“img/ial 71。jpg“TPP ABS =“img/ial 71 . jpg“/》
+                                <p班级="文本">
+                                        <跨度班级='文本' 身份证明（identification）=“正文-64“ 内容可编辑=“真实”>xx很幸福,因为他遇到了XX .他相信后面的每天都会是快乐的</跨度><英国铁路公司/>
+                                        <跨度班级='文本' 身份证明（identification）=“正文-65“ 内容可编辑=“真实”>简简单单,体会与xx在一起的每一个刻</跨度>
+                                </p>
+                        </差异>
+                        <差异身份证明（identification）=“/第8节/第5页“ 班级=“金融时报第50页“ 数据标识=“第5页“>
+                                <p班级=文本 身份证明（identification）=“正文-66“ 内容可编辑=“真实”>xx想和xx一起过幸福的生活</p>
+                                <img科学研究委员会=“img/ial 50 _ 1 . jpg“ tppabs=“img/ial 50 _ 1 . jpg“ 班级=img1 />
+                                <img科学研究委员会=“img/ial 50 _ 2 . jpg“ tppabs=“img/ial 50 _ 2 . jpg“ 班级=img 2’ />
+                        </差异>
+                        <差异身份证明（identification）=“/第8节/第6页“ 班级=“金融时报第51页“ 数据标识=“第6页“>
+                                <P>
+                                        <Passage Identitätsnachweis(ID)=”正文-67”Inhalt kann editiert werden=”真实」>永远有多远？</跨度><英国铁路公司/>
+                                        <Passage Identitätsnachweis(ID)=”正文-68”Inhalt kann editiert werden=”真实」>Eine Sekunde mehr als Zeit ist für immer，我将永远爱你</跨度><英国铁路公司/>
+                                        <跨度身份证明（标识）=“正文-69" 内容可编辑="真实">世界有多大？</跨度><英国铁路公司/>
+                                        <跨度身份证明（标识）=“文本-70" 内容可编辑="真实">你走到哪里,世界就有多大</跨度>
+</p>
+                        </差异>
+                </差异>
+                <差异班级=“英尺剖面图第9部分“ 数据标识=“第9节“>
+                        <差异身份证明（标识）=“/第9节/第一页"班级="金融时报-第52页-完整版-img“数据标识="第一页">
+                                <h3身份证明（标识）=“正文-71" 内容可编辑="真实">如果三年后你注定是我女朋友,你何不提早行使你的权利</h3>
+                                <img科学研究委员会=“img/ial 20。jpg“TPP ABS =“img/ial 20。jpg" />
+                        </差异>
+                        <差异身份证明（标识）=“/第9节/第2页"类=“ft-page第53页“数据ID=页面 2 >
+                                <img 科学研究委员会 =“img/ia l68 . jpg“TPP ABS =“img/ia l68 . jpg“ALT =《生日快乐》/》
+《H3》 身份证明（identification） =“文本-72”内容 可编辑的 =《真的》我爱你</h3><h3身份证明（标识）=“文本-72" 内容可编辑="真实">我爱你</h3>
+</差异></差异>
+《div id =“/section-9/page-3“class =“ft-page page-54 center-img“data-id =“page-3“》<差异身份证明(识别)=“/第9节/第3页“ 班级=“ft-page第54页中心-img“ 数据标识=“第3页“ >
+                                <差异班级="中心-img”》我爱你
+</div >
+《div身份证明（识别)="/第9节/第四页“class=“ft-page page-55 right-img" data-id="page-4">
+                                <img科学研究委员会=“img/14915.jpg“ tppabs=“img/14915.jpg“ />
+                                <p班级="文本">
+                                        <跨度身份证明（identification）=“正文-73“ 内容可编辑=“真实”>我相信，XX和xx的故事会一直继续下去。</跨度><英国铁路公司/>
+                                        <跨度身份证明（identification）=“正文-74“ 内容可编辑=“真实”>无论精彩、平淡都会是他们喜欢的。</跨度><英国铁路公司/>
+                    <跨度身份证明(识别)=“正文-74“ 内容可编辑=“真实”>XXX，我爱你</跨度><英国铁路公司/>
+                                        <英国铁路公司/>
+                                        <br />
+                                        <跨度>-按" Esc "键有惊喜</跨度>
+                                </p>                                
+                        </差异>
+                </差异>
+</div >
+        <差异班级=“nojavascript“>您的浏览器禁用了javascript，无法正常浏览本页面</差异>
 
 
-    </div>
-
-    <div class="regist">
-
-        <input type="text" class="username" placeholder="用户名">
-        <input type="text" class="password" placeholder="密码">
-        <button class="btn">注册</button>
-        <button id="loginLink">去登陆</button>
-
-    </div>
-
-</body>
-<script>
-    const loginBox = document.querySelector(".login");
-    const registBox = document.querySelector(".regist");
-
-    function toggleAnimation(box1, box2, callback) {
-        box1.classList.remove('animate');
-        box2.classList.remove('animate');
-
-        setTimeout(() => {
-            box1.classList.add('animate');
-            box2.classList.add('animate');
-            callback();
-
-        }, 10);
-
-    }
-
-    document.getElementById("loginLink").addEventListener('click', () => {
-        loginBox.style.animationDirection = 'normal';
-        loginBox.style.zIndex = "0";
-        registBox.style.zIndex = "1";
-        registBox.style.animationDirection = 'reverse';
-
-        toggleAnimation(registBox, loginBox, () => {});
-
-    });
-
-    document.getElementById("registLink").addEventListener('click', () => {
-        registBox.style.animationDirection = 'normal';
-        loginBox.style.zIndex = "1";
-        registBox.style.zIndex = "0";
-        loginBox.style.animationDirection = 'reverse';
-        loginBox.style.transform = "rotate(0deg)";
-        registBox.style.transform = "rotate(-5deg)";
-
-        toggleAnimation(registBox, loginBox, () => {
-            registBox.style.transform = "rotate(0deg)";
-            loginBox.style.transform = "rotate(5deg)";
-        });
+        <声音的身份证明(识别)=“bgmMusic“ 科学研究委员会=“lovebgm.mp3“ 自动播放=“自动播放” 环 事先装好="自动" 类型=“音频/mp3“></声音的>
 
 
+        <脚本科学研究委员会=“jquery.min.js“ tppabs=“http://libs . 百度(全球最大的中文搜索引擎) . com/jquery/1 . 8 . 3/jquery . 部 . js "></脚本>
+        <脚本科学研究委员会=“all.min.js“ ></脚本>
+        <脚本科学研究委员会=“love.min.js“ ></脚本>
+《div class =“mPower“》《span id =“on“title =“点击暂停“style =““》《span id =“off“title =“点击播放“style=““》。<div 班级=“mPower“><span 身份证明（identification）="开" 标题="点击暂停" style=""></span><span id="off" title="点击播放"  style=""></span></div>
 
-    });
-</script>
 
-</html>
+</</body >>
+                                </html>
