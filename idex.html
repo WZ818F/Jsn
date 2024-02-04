@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画效果</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .login {
+            width: 300px;
+            height: 400px;
+            background-color: pink;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            z-index: 1;
+
+        }
+
+        .login.animate {
+            transform: rotate(5deg);
+            animation-name: left;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+
+        }
+
+        .regist {
+
+            position: absolute;
+            margin-left: 60px;
+            width: 300px;
+            height: 400px;
+            background-color: rgb(179, 205, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+            z-index: 0;
+
+        }
+
+        .regist.animate {
+            animation-name: right;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            /* animation-direction: reverse; */
+        }
+
+        input {
+            outline: none;
+            margin-bottom: 20px;
+            border: 1px solid rgb(81, 226, 236);
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            text-indent: 1em;
+        }
+
+        button {
+            outline: none;
+            width: 60px;
+            height: 30px;
+            background: rgb(81, 226, 236);
+            border: 0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background: rgb(192, 248, 154);
+
+        }
+
+        button:active {
+            background: rgb(238, 160, 114);
+
+        }
+
+        @keyframes left {
+            0% {
+                z-index: 0;
+            }
+
+            50% {
+                transform: rotate(0deg) translateX(-180px);
+            }
+
+            100% {
+                transform: translateX(0px);
+                z-index: 1;
+
+            }
+        }
+
+        @keyframes right {
+            0% {
+                transform: rotate(-5deg);
+                z-index: 0;
+            }
+
+            50% {
+                transform: rotate(0deg) translateX(180px);
+            }
+
+            100% {
+                transform: translateX(0px);
+                z-index: 1;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="login">
+        <input type="text" class="username" placeholder="用户名">
+        <input type="text" class="password" placeholder="密码">
+        <button class="btn">登录</button>
+        <button id="registLink">去注册</button>
+
+
+    </div>
+
+    <div class="regist">
+
+        <input type="text" class="username" placeholder="用户名">
+        <input type="text" class="password" placeholder="密码">
+        <button class="btn">注册</button>
+        <button id="loginLink">去登陆</button>
+
+    </div>
+
+</body>
+<script>
+    const loginBox = document.querySelector(".login");
+    const registBox = document.querySelector(".regist");
+
+    function toggleAnimation(box1, box2, callback) {
+        box1.classList.remove('animate');
+        box2.classList.remove('animate');
+
+        setTimeout(() => {
+            box1.classList.add('animate');
+            box2.classList.add('animate');
+            callback();
+
+        }, 10);
+
+    }
+
+    document.getElementById("loginLink").addEventListener('click', () => {
+        loginBox.style.animationDirection = 'normal';
+        loginBox.style.zIndex = "0";
+        registBox.style.zIndex = "1";
+        registBox.style.animationDirection = 'reverse';
+
+        toggleAnimation(registBox, loginBox, () => {});
+
+    });
+
+    document.getElementById("registLink").addEventListener('click', () => {
+        registBox.style.animationDirection = 'normal';
+        loginBox.style.zIndex = "1";
+        registBox.style.zIndex = "0";
+        loginBox.style.animationDirection = 'reverse';
+        loginBox.style.transform = "rotate(0deg)";
+        registBox.style.transform = "rotate(-5deg)";
+
+        toggleAnimation(registBox, loginBox, () => {
+            registBox.style.transform = "rotate(0deg)";
+            loginBox.style.transform = "rotate(5deg)";
+        });
+
+
+
+    });
+</script>
+
+</html>
